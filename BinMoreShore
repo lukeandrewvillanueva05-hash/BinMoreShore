@@ -1,0 +1,1951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>BinMoreShore | Cleaner Shores. Better Future.</title>
+
+
+<style>
+
+/* =====================================================
+   GENERAL SETTINGS
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #17252a;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+:root {
+    --cyan: #00d9f5;
+    --dark-cyan: #00a8c0;
+    --dark: #102328;
+    --white: #ffffff;
+    --light: #f2fcfd;
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
+    background: rgba(255,255,255,0.92);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(0,180,200,0.15);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 18px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #17252a;
+}
+
+.logo span {
+    color: var(--cyan);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #17252a;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--dark-cyan);
+}
+
+.menu-btn {
+    display: none;
+
+    border: none;
+    background: none;
+
+    font-size: 28px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   HERO WITH SEA BACKGROUND
+===================================================== */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 140px 10% 80px;
+
+    position: relative;
+
+    color: white;
+
+    overflow: hidden;
+
+    background-image:
+
+        linear-gradient(
+            rgba(0,25,35,0.65),
+            rgba(0,25,35,0.65)
+        ),
+
+        url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=85");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+}
+
+
+/* HERO CONTENT */
+
+.hero-content {
+    max-width: 680px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.small-title {
+
+    color: var(--cyan);
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    font-size: 13px;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+
+    font-size: clamp(50px, 7vw, 90px);
+
+    line-height: 0.98;
+
+    margin-bottom: 30px;
+}
+
+.hero h1 span {
+    color: var(--cyan);
+}
+
+.hero-content > p {
+
+    font-size: 18px;
+
+    color: #e8f9fb;
+
+    max-width: 600px;
+}
+
+
+/* BUTTONS */
+
+.hero-buttons {
+
+    margin-top: 35px;
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.btn {
+
+    display: inline-block;
+
+    padding: 14px 27px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+    cursor: pointer;
+
+    border: none;
+}
+
+.primary {
+
+    background: var(--cyan);
+
+    color: #06343b;
+}
+
+.primary:hover {
+
+    background: white;
+
+    transform: translateY(-3px);
+}
+
+.secondary {
+
+    border: 2px solid white;
+
+    color: white;
+
+    background: transparent;
+}
+
+.secondary:hover {
+
+    background: white;
+
+    color: #06343b;
+}
+
+
+/* =====================================================
+   HERO CARD
+===================================================== */
+
+.hero-card {
+
+    width: 350px;
+
+    min-height: 390px;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    background: rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,0.35);
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.water-circle {
+
+    width: 150px;
+
+    height: 150px;
+
+    border-radius: 50%;
+
+    background: rgba(0,217,245,0.2);
+
+    border: 2px solid var(--cyan);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 70px;
+
+    margin-bottom: 25px;
+}
+
+.hero-card h3 {
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+.hero-card p {
+
+    color: #e2f7f9;
+}
+
+
+/* =====================================================
+   GENERAL SECTION
+===================================================== */
+
+.section {
+
+    padding: 100px 10%;
+
+    background: white;
+}
+
+.light-section {
+
+    background: var(--light);
+}
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.section-title > p:first-child {
+
+    color: var(--dark-cyan);
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    font-size: 13px;
+}
+
+.section-title h2 {
+
+    font-size: 45px;
+
+    margin-top: 8px;
+}
+
+.section-description {
+
+    max-width: 650px;
+
+    margin: 15px auto 0;
+
+    color: #60767b;
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about-container {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.about-text p {
+
+    color: #52666b;
+
+    font-size: 17px;
+
+    margin-bottom: 20px;
+}
+
+.about-box {
+
+    padding: 50px;
+
+    border-radius: 25px;
+
+    background:
+
+        linear-gradient(
+            rgba(0,217,245,0.75),
+            rgba(0,160,185,0.75)
+        ),
+
+        url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=80");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+    text-align: center;
+
+    box-shadow: 0 20px 50px rgba(0,180,200,0.2);
+}
+
+.about-box .icon {
+
+    font-size: 60px;
+
+    margin-bottom: 15px;
+}
+
+.about-box h3 {
+
+    font-size: 27px;
+
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+   PROBLEM
+===================================================== */
+
+.problem-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.problem-box {
+
+    padding: 35px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    border: 1px solid #dceff2;
+
+    transition: 0.3s;
+}
+
+.problem-box:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow: 0 15px 35px rgba(0,180,200,0.12);
+}
+
+.feature-icon {
+
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.problem-box h3 {
+
+    margin-bottom: 10px;
+}
+
+.problem-box p {
+
+    color: #60767b;
+}
+
+
+/* =====================================================
+   SOLUTION
+===================================================== */
+
+.solution-container {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.solution-card {
+
+    padding: 35px 25px;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    border: 1px solid #dceff2;
+
+    transition: 0.3s;
+}
+
+.solution-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow: 0 15px 35px rgba(0,180,200,0.12);
+}
+
+.solution-number {
+
+    color: var(--cyan);
+
+    font-size: 30px;
+
+    font-weight: 800;
+
+    margin-bottom: 15px;
+}
+
+.solution-card p {
+
+    color: #60767b;
+}
+
+
+/* =====================================================
+   SEA INFORMATION SECTION
+===================================================== */
+
+.sea-section {
+
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 100px 10%;
+
+    color: white;
+
+    position: relative;
+
+    background-image:
+
+        linear-gradient(
+            rgba(0,35,45,0.65),
+            rgba(0,35,45,0.65)
+        ),
+
+        url("https://images.unsplash.com/photo-1505881502353-a1986add3762?auto=format&fit=crop&w=2000&q=85");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+}
+
+.sea-content {
+
+    max-width: 750px;
+}
+
+.sea-content p:first-child {
+
+    color: var(--cyan);
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.sea-content h2 {
+
+    font-size: 50px;
+
+    line-height: 1.1;
+
+    margin: 15px 0;
+}
+
+.sea-content p:last-child {
+
+    color: #e5f8fa;
+
+    font-size: 18px;
+}
+
+
+/* =====================================================
+   BENEFITS
+===================================================== */
+
+.cards {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.feature-card {
+
+    background: white;
+
+    padding: 35px 25px;
+
+    border-radius: 18px;
+
+    border: 1px solid #dceff2;
+
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow: 0 15px 30px rgba(0,180,200,0.12);
+}
+
+.feature-card p {
+
+    color: #60767b;
+}
+
+
+/* =====================================================
+   COMMUNITY
+===================================================== */
+
+.community {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.community h3 {
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+.community p {
+
+    color: #60767b;
+
+    margin-bottom: 15px;
+}
+
+.community-stat {
+
+    padding: 45px;
+
+    border-radius: 20px;
+
+    background: #e5fbfe;
+
+    text-align: center;
+}
+
+.community-stat strong {
+
+    color: var(--dark-cyan);
+
+    font-size: 70px;
+
+    display: block;
+
+    line-height: 1;
+}
+
+.community-stat span {
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   MISSION
+===================================================== */
+
+.mission {
+
+    padding: 110px 10%;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+
+        linear-gradient(
+            rgba(0,25,35,0.75),
+            rgba(0,25,35,0.75)
+        ),
+
+        url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2000&q=85");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.mission div {
+
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.mission p:first-child {
+
+    color: var(--cyan);
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.mission h2 {
+
+    font-size: 48px;
+
+    line-height: 1.2;
+
+    margin: 15px 0 20px;
+}
+
+.mission p:last-child {
+
+    color: #d9eef1;
+
+    font-size: 17px;
+}
+
+
+/* =====================================================
+   VIDEO
+===================================================== */
+
+.video-section {
+
+    padding: 110px 10%;
+
+    text-align: center;
+
+    background: #f2fcfd;
+}
+
+.video-content {
+
+    max-width: 700px;
+
+    margin: auto;
+}
+
+.video-content > p:first-child {
+
+    color: var(--dark-cyan);
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.video-content h2 {
+
+    font-size: 45px;
+
+    margin: 10px 0;
+}
+
+.video-content p {
+
+    color: #60767b;
+
+    margin-bottom: 30px;
+}
+
+
+/* =====================================================
+   CALL TO ACTION
+===================================================== */
+
+.cta {
+
+    padding: 110px 10%;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+
+        linear-gradient(
+            rgba(0,175,200,0.90),
+            rgba(0,125,150,0.90)
+        ),
+
+        url("https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=2000&q=85");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.cta div {
+
+    max-width: 800px;
+
+    margin: auto;
+}
+
+.cta > div > p:first-child {
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.cta h2 {
+
+    font-size: 48px;
+
+    margin: 10px 0 15px;
+}
+
+.cta p {
+
+    margin-bottom: 30px;
+}
+
+.white-btn {
+
+    background: white;
+
+    color: #008ca5;
+}
+
+.white-btn:hover {
+
+    transform: translateY(-3px);
+
+    background: #f0ffff;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    background: #0d1c20;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 45px 20px;
+}
+
+.footer-logo {
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+.footer-logo span {
+
+    color: var(--cyan);
+}
+
+footer p {
+
+    color: #aebfc2;
+}
+
+.copyright {
+
+    margin-top: 20px;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+@media(max-width: 950px) {
+
+    .nav-links {
+
+        display: none;
+
+        position: absolute;
+
+        top: 70px;
+
+        left: 0;
+
+        width: 100%;
+
+        background: white;
+
+        flex-direction: column;
+
+        padding: 25px;
+
+        text-align: center;
+    }
+
+    .nav-links.active {
+
+        display: flex;
+    }
+
+    .menu-btn {
+
+        display: block;
+    }
+
+    .hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-top: 130px;
+    }
+
+    .hero-buttons {
+
+        justify-content: center;
+    }
+
+    .about-container {
+
+        grid-template-columns: 1fr;
+    }
+
+    .problem-grid {
+
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .solution-container {
+
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .cards {
+
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .community {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media(max-width: 600px) {
+
+    .navbar {
+
+        padding: 16px 20px;
+    }
+
+    .hero {
+
+        padding-left: 6%;
+
+        padding-right: 6%;
+    }
+
+    .hero h1 {
+
+        font-size: 50px;
+    }
+
+    .hero-card {
+
+        width: 100%;
+
+        max-width: 330px;
+    }
+
+    .section {
+
+        padding: 75px 6%;
+    }
+
+    .section-title h2 {
+
+        font-size: 34px;
+    }
+
+    .problem-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .solution-container {
+
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+
+        grid-template-columns: 1fr;
+    }
+
+    .sea-content h2 {
+
+        font-size: 38px;
+    }
+
+    .mission h2 {
+
+        font-size: 35px;
+    }
+
+    .cta h2 {
+
+        font-size: 35px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+<span>Bin</span>MoreShore
+</div>
+
+<ul class="nav-links">
+
+<li>
+<a href="#home">Home</a>
+</li>
+
+<li>
+<a href="#about">About</a>
+</li>
+
+<li>
+<a href="#problem">Problem</a>
+</li>
+
+<li>
+<a href="#solution">Solution</a>
+</li>
+
+<li>
+<a href="#benefits">Benefits</a>
+</li>
+
+<li>
+<a href="#contact">Contact</a>
+</li>
+
+</ul>
+
+<button
+class="menu-btn"
+onclick="toggleMenu()">
+
+☰
+
+</button>
+
+</nav>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section id="home" class="hero">
+
+<div class="hero-content">
+
+<p class="small-title">
+BINMORESHORE ENVIRONMENTAL PROJECT
+</p>
+
+<h1>
+
+Cleaner Shores.<br>
+
+<span>Better Future.</span>
+
+</h1>
+
+<p>
+
+BinMoreShore is an environmental project focused on
+promoting responsible waste management and cleaner
+coastal communities.
+
+</p>
+
+<div class="hero-buttons">
+
+<a
+href="#about"
+class="btn primary">
+
+Discover BinMoreShore
+
+</a>
+
+<a
+href="#solution"
+class="btn secondary">
+
+Explore Our Solution
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-card">
+
+<div class="water-circle">
+🌊
+</div>
+
+<h3>
+BinMoreShore
+</h3>
+
+<p>
+Take Action with BinMoreShore.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section id="about" class="section">
+
+<div class="section-title">
+
+<p>ABOUT OUR PROJECT</p>
+
+<h2>
+What is BinMoreShore?
+</h2>
+
+<p class="section-description">
+
+A community-focused environmental project
+designed for cleaner and more sustainable shores.
+
+</p>
+
+</div>
+
+
+<div class="about-container">
+
+<div class="about-text">
+
+<p>
+
+<strong>BinMoreShore</strong> is a proposed
+environmental solution that aims to address
+waste-management concerns in coastal communities.
+
+</p>
+
+<p>
+
+Our project focuses on problems such as improper
+waste disposal, used diapers, broken or blocked
+drainage systems, unpleasant odors, and the
+accumulation of waste near coastal areas.
+
+</p>
+
+<p>
+
+Rather than simply identifying the problem,
+BinMoreShore promotes awareness, proper waste
+management, community participation, and
+environmental responsibility.
+
+</p>
+
+<p>
+
+The project is focused on
+<strong>Isla Bonita, Rosario, Cavite</strong>,
+where maintaining a clean coastal environment
+can benefit both the community and its surroundings.
+
+</p>
+
+</div>
+
+
+<div class="about-box">
+
+<div class="icon">
+🌊
+</div>
+
+<h3>
+Isla Bonita
+</h3>
+
+<p>
+Rosario, Cavite
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     PROBLEM
+===================================================== -->
+
+<section id="problem" class="section light-section">
+
+<div class="section-title">
+
+<p>
+THE PROBLEM
+</p>
+
+<h2>
+What Are We Addressing?
+</h2>
+
+</div>
+
+
+<div class="problem-grid">
+
+
+<div class="problem-box">
+
+<div class="feature-icon">
+🗑️
+</div>
+
+<h3>
+Improper Waste Disposal
+</h3>
+
+<p>
+
+Improper disposal can cause waste to accumulate
+in communities and eventually reach waterways.
+
+</p>
+
+</div>
+
+
+<div class="problem-box">
+
+<div class="feature-icon">
+🚼
+</div>
+
+<h3>
+Used Diapers
+</h3>
+
+<p>
+
+Improperly discarded used diapers can contribute
+to waste-management and sanitation concerns.
+
+</p>
+
+</div>
+
+
+<div class="problem-box">
+
+<div class="feature-icon">
+🚧
+</div>
+
+<h3>
+Drainage Problems
+</h3>
+
+<p>
+
+Blocked or damaged drainage can affect water flow
+and contribute to stagnant water and flooding.
+
+</p>
+
+</div>
+
+
+<div class="problem-box">
+
+<div class="feature-icon">
+🌫️
+</div>
+
+<h3>
+Unpleasant Odor
+</h3>
+
+<p>
+
+Accumulated waste and stagnant water can create
+unpleasant smells in surrounding areas.
+
+</p>
+
+</div>
+
+
+<div class="problem-box">
+
+<div class="feature-icon">
+🌊
+</div>
+
+<h3>
+Coastal Pollution
+</h3>
+
+<p>
+
+Waste that reaches waterways can contribute to
+pollution and affect coastal cleanliness.
+
+</p>
+
+</div>
+
+
+<div class="problem-box">
+
+<div class="feature-icon">
+♻️
+</div>
+
+<h3>
+Poor Waste Management
+</h3>
+
+<p>
+
+Limited awareness of proper waste segregation and
+disposal can make environmental problems harder
+to manage.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     SEA IMAGE SECTION
+===================================================== -->
+
+<section class="sea-section">
+
+<div class="sea-content">
+
+<p>
+WHY OUR SHORES MATTER
+</p>
+
+<h2>
+Protecting the Shore Starts With Us.
+</h2>
+
+<p>
+
+The shoreline is part of our community.
+Keeping it clean requires responsible
+waste management, awareness, and cooperation.
+
+BinMoreShore aims to encourage people to
+turn environmental awareness into action.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     SOLUTION
+===================================================== -->
+
+<section id="solution" class="section">
+
+<div class="section-title">
+
+<p>
+OUR APPROACH
+</p>
+
+<h2>
+The BinMoreShore Solution
+</h2>
+
+</div>
+
+
+<div class="solution-container">
+
+
+<div class="solution-card">
+
+<div class="solution-number">
+01
+</div>
+
+<h3>
+Identify
+</h3>
+
+<p>
+
+Recognize the environmental and waste-management
+problems affecting the community.
+
+</p>
+
+</div>
+
+
+<div class="solution-card">
+
+<div class="solution-number">
+02
+</div>
+
+<h3>
+Manage
+</h3>
+
+<p>
+
+Encourage proper waste segregation, collection,
+and disposal.
+
+</p>
+
+</div>
+
+
+<div class="solution-card">
+
+<div class="solution-number">
+03
+</div>
+
+<h3>
+Educate
+</h3>
+
+<p>
+
+Promote environmental awareness and responsible
+waste-management habits.
+
+</p>
+
+</div>
+
+
+<div class="solution-card">
+
+<div class="solution-number">
+04
+</div>
+
+<h3>
+Take Action
+</h3>
+
+<p>
+
+Encourage students and community members to
+participate in protecting their surroundings.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     BENEFITS
+===================================================== -->
+
+<section id="benefits" class="section light-section">
+
+<div class="section-title">
+
+<p>
+PROJECT BENEFITS
+</p>
+
+<h2>
+What BinMoreShore Can Promote
+</h2>
+
+</div>
+
+
+<div class="cards">
+
+
+<div class="feature-card">
+
+<div class="feature-icon">
+🌊
+</div>
+
+<h3>
+Cleaner Shores
+</h3>
+
+<p>
+
+Promotes efforts toward cleaner and more
+organized coastal areas.
+
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="feature-icon">
+🌱
+</div>
+
+<h3>
+Environmental Awareness
+</h3>
+
+<p>
+
+Encourages people to understand the importance
+of protecting the environment.
+
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="feature-icon">
+🤝
+</div>
+
+<h3>
+Community Participation
+</h3>
+
+<p>
+
+Encourages students, residents, and community
+members to work together.
+
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="feature-icon">
+♻️
+</div>
+
+<h3>
+Responsible Waste Management
+</h3>
+
+<p>
+
+Promotes better habits when handling,
+segregating, and disposing of waste.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     COMMUNITY
+===================================================== -->
+
+<section class="section">
+
+<div class="section-title">
+
+<p>
+OUR COMMUNITY
+</p>
+
+<h2>
+Isla Bonita, Rosario, Cavite
+</h2>
+
+</div>
+
+
+<div class="community">
+
+<div>
+
+<h3>
+A Solution Designed Around the Community
+</h3>
+
+<p>
+
+BinMoreShore focuses on environmental concerns
+that can affect coastal communities.
+
+</p>
+
+<p>
+
+By identifying specific problems and encouraging
+community participation, the project aims to
+promote practical environmental action.
+
+</p>
+
+</div>
+
+
+<div class="community-stat">
+
+<strong>
+01
+</strong>
+
+<span>
+
+Community-focused<br>
+Environmental Project
+
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     MISSION
+===================================================== -->
+
+<section class="mission">
+
+<div>
+
+<p>
+OUR MISSION
+</p>
+
+<h2>
+
+Turning Environmental Awareness
+Into Community Action.
+
+</h2>
+
+<p>
+
+BinMoreShore aims to encourage responsible
+waste management, environmental awareness,
+and community participation for cleaner and
+more sustainable shores.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     VIDEO
+===================================================== -->
+
+<section class="video-section">
+
+<div class="video-content">
+
+<p>
+OUR PRESENTATION
+</p>
+
+<h2>
+See BinMoreShore in Action
+</h2>
+
+<p>
+
+Watch our promotional video to learn more
+about our project, the problem we identified,
+and our proposed solution.
+
+</p>
+
+<!-- Replace # with your video link -->
+
+<a
+href="#"
+class="btn primary"
+onclick="showVideoMessage()">
+
+Watch Our Video
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     CALL TO ACTION
+===================================================== -->
+
+<section id="contact" class="cta">
+
+<div>
+
+<p>
+MAKE A DIFFERENCE
+</p>
+
+<h2>
+Take Action with BinMoreShore.
+</h2>
+
+<p>
+
+A cleaner shore begins with responsible choices.
+Together, we can help promote better waste
+management and environmental awareness.
+
+</p>
+
+<button
+class="btn white-btn"
+onclick="showMessage()">
+
+Support BinMoreShore
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<div class="footer-logo">
+
+<span>Bin</span>MoreShore
+
+</div>
+
+<p>
+Cleaner Shores. Better Future.
+</p>
+
+<p class="copyright">
+
+© 2026 BinMoreShore |
+Entrepreneurship Project
+
+</p>
+
+</footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+function toggleMenu() {
+
+    const menu =
+        document.querySelector(".nav-links");
+
+    menu.classList.toggle("active");
+
+}
+
+
+function showMessage() {
+
+    alert(
+        "Thank you for supporting BinMoreShore! 🌊\n\n" +
+        "Take Action with BinMoreShore."
+    );
+
+}
+
+
+function showVideoMessage() {
+
+    alert(
+        "Our BinMoreShore promotional video will be available here."
+    );
+
+}
+
+
+/* Close mobile menu after clicking a link */
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+        document
+        .querySelector(".nav-links")
+        .classList.remove("active");
+
+    });
+
+});
+
+</script>
+
+
+</body>
+
+</html>
